@@ -1,0 +1,159 @@
+/*  
+Theme Name: Head Write
+Theme URI: http://xloger.com
+Description: -，=手绘风格。。。大概是这样吧
+Version: 1.0
+Author: Xloger
+Author URI: http://xloger.com/
+*/
+
+/*全局*/
+
+body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Lucida Calligraphy,YaHei Consolas Hybrid,微软雅黑,Verdana,simsun,Sans-Serif;
+	font-size: 16px;
+	background: url(images/bg.jpg);
+	color: #666;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+p {
+	text-indent:2em;
+}
+a:link {color: #444;text-decoration:none;}     /* 未访问的链接 */
+a:visited {color: #444;text-decoration:none;}  /* 已访问的链接 */
+a:hover {color: #478;text-decoration:none;}    /* 当有鼠标悬停在链接上 */
+a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
+
+/*wrapper*/
+#wrapper{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+
+/*left*/
+#left {
+	width: 240px;
+	float: left;
+	position: fixed;
+}
+
+/*header*/
+#header h1{
+	font-size: 35px;
+	font-family: 方正舒体;
+	margin-bottom: 10px;
+}
+#header p{
+	font-size: 20px;
+	font-family: 方正少儿_GBK,华文行楷;
+	text-indent: 0em;
+	padding-right: 15px;
+	width: 225px;
+}
+
+/*sidebar*/
+#sidebar {
+	margin-top: 30px;
+}
+#sidebar li{	
+	list-style: none;
+	text-align: right;
+	margin-right: 60px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 黑体;
+}
+
+
+
+/*container*/
+#container {
+	margin-top: 33px;
+	margin-left: 240px;
+	width: 570px;
+	float: left;
+}
+#container h2{
+	/*text-indent: 2em;*/
+	font-size: 25px;
+	font-family: 华文行楷;
+}
+
+.post {
+	margin-bottom: 50px;
+}
+
+.postmetadata{
+	text-indent: 0em;
+	font-size: 12px;
+}
+
+
+/*footer*/
+#footer {
+	width: 960px;
+	float: left;
+	margin-top: 40px;
+}
+
+
+/*comments*/
+
+	/*评论列表*/
+	.decmt-box{
+		list-style: none;
+	}
+	.comment {
+		list-style: none;
+		margin-bottom: 20px;
+	}
+	.gravatar{
+		display:inline;
+		float: left;
+	}
+
+	.comment p {
+		text-indent:0em;
+	}
+
+	.comment_time{
+		font-size: 14px;
+	}
+
+	/*评论表单*/
+	#commentform{
+		margin-top: 30px;
+	}
+	#commentform ul{
+		padding: 0px;
+		margin: 0px;
+	}
+	#commentform li{
+		list-style: none;
+	}
+	/*评论导航*/
+	.cmt-nav-next{
+		float: right;
+	}
+
+/*文章页*/
+	/*导航*/
+	.navigation{
+		margin-bottom: 30px;
+	}
+	#navigation_up{
+		float: left;
+	}
+	#navigation_down{
+		float: right;
+	}
