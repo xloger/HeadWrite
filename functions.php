@@ -61,6 +61,7 @@ function aurelius_comment($comment, $args, $depth)
                 <span class="revamp"><?php edit_comment_link('修改'); ?></span>
             </div>
         </div>
+        <div class="clear"></div>
     </li>
 <?php } ?>
 

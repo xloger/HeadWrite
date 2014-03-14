@@ -54,26 +54,26 @@ elseif ( get_option('comment_registration') && !is_user_logged_in() ) :
     <ul>
         <?php if ( !is_user_logged_in() ) : ?>
         <li class="clearfix">
-            <label for="name">昵称</label>
             <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="23" tabindex="1" />
         </li>
         <li class="clearfix">
-            <label for="email">电子邮件</label>
             <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="23" tabindex="2" />
         </li>
         <li class="clearfix">
-            <label for="email">网址(选填)</label>
             <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="23" tabindex="3" />
         </li>
         <?php else : ?>
         <li class="clearfix">您已登录:<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="退出登录">退出 &raquo;</a></li>
-        <?php endif; ?>
-        <li class="clearfix">
-            <textarea id="message comment" name="comment" tabindex="4" rows="3" cols="40"></textarea>
-        </li>
-        <li class="clearfix">
-            <!-- Add Comment Button -->
-            <a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="button medium black right">发表评论</a> </li>
+
+       <?php endif; ?>
+       <div class="clear"></div>
+       <li class="clearfix">
+           <textarea id="message_comment" name="comment"></textarea>
+       </li>
+       <div class="clear"></div>
+       <li class="clearfix">
+       <!-- Add Comment Button -->
+       <a href="javascript:void(0);" onClick="Javascript:document.forms['commentform'].submit()" class="comment_button">评论</a> </li>
     </ul>
     <?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>

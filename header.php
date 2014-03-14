@@ -6,7 +6,7 @@
 
 
 
-	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 
 
@@ -44,5 +44,10 @@
 <!-- header -->
 <div id="header">
 	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?> </a></h1>
+	<div class="clear"></div>
 	<p><?php bloginfo('description');?></p>
+	<div class="clear"></div>
+	<ul>
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+	</ul>
 </div>

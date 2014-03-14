@@ -1,8 +1,8 @@
 /*  
 Theme Name: Head Write
-Theme URI: http://xloger.com
+Theme URI: https://github.com/xloger/HeadWrite
 Description: -，=手绘风格。。。大概是这样吧
-Version: 1.0
+Version: 1.1
 Author: Xloger
 Author URI: http://xloger.com/
 */
@@ -31,6 +31,9 @@ a:visited {color: #444;text-decoration:none;}  /* 已访问的链接 */
 a:hover {color: #478;text-decoration:none;}    /* 当有鼠标悬停在链接上 */
 a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
 
+.clear {
+	clear: both;
+}
 /*wrapper*/
 #wrapper{
 	width: 960px;
@@ -48,10 +51,14 @@ a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
 }
 
 /*header*/
+#header {
+	margin-right: 60px;
+}
 #header h1{
 	font-size: 35px;
 	font-family: 方正舒体;
 	margin-bottom: 10px;
+	float: right;
 }
 #header p{
 	font-size: 20px;
@@ -61,14 +68,13 @@ a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
 	width: 225px;
 }
 
-/*sidebar*/
-#sidebar {
+/*导航菜单*/
+#header ul{
 	margin-top: 30px;
 }
-#sidebar li{	
+#header li{	
 	list-style: none;
 	text-align: right;
-	margin-right: 60px;
 	margin-bottom: 20px;
 	font-size: 20px;
 	font-family: 黑体;
@@ -121,6 +127,10 @@ a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
 		display:inline;
 		float: left;
 	}
+	.comment_main{
+		width: 512px;
+		float: left;
+	}
 
 	.comment p {
 		text-indent:0em;
@@ -141,12 +151,35 @@ a:active {color: #478;text-decoration:none;}   /* 被选择的链接 */
 	#commentform li{
 		list-style: none;
 	}
+
+	#commentform .clearfix{
+		float: left;
+	}
+	#message_comment{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 513px;
+		height: 100px;
+		float: left;
+	}
+	.comment_button{
+		font-size: 18px;
+	}
 	/*评论导航*/
 	.cmt-nav-next{
 		float: right;
 	}
 
 /*文章页*/
+	/*文章样式*/
+	.entry{
+		line-height: 180%;
+	}
+	.entry p{
+		padding-bottom: 13px;
+	}
+
+
 	/*导航*/
 	.navigation{
 		margin-bottom: 30px;
